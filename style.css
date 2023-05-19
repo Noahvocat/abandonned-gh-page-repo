@@ -1,0 +1,52 @@
+.text-holder {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: green;
+    font-size: 3rem;
+    display: grid;
+    font-family: sans-serif;
+  }
+  .text-holder :is(.text, .cursor) {
+    grid-area: 1/1;
+    width: 100%;
+  }
+  .text-holder .text {
+    padding-right: 5px;
+    -webkit-animation: typing 2s;
+            animation: typing 2s;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .text-holder .cursor {
+    border-right: 4px solid green;
+    -webkit-animation: typing 2s, cursor 0.4s step-end infinite alternate;
+            animation: typing 2s, cursor 0.4s step-end infinite alternate;
+  }
+  
+  .container .smallText {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+  }
+  
+  @-webkit-keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
