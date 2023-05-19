@@ -24,6 +24,12 @@
             animation: typing 2s, cursor 0.4s step-end infinite alternate;
   }
   
+  .container .smallTextWhite {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-color: white;
+  }
+
   .container .smallText {
     font-size: 1.3rem;
     font-family: sans-serif;
